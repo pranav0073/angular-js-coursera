@@ -14,7 +14,7 @@ function ToBuyListController(ShoppingLogicService){
   list1.buy = function(index){
     ShoppingLogicService.buyItem(index);
   }
-  list1.listSize = list1.items.length;
+
 
 }
 
@@ -22,7 +22,7 @@ AlreadyBoughtListController.$inject = ['ShoppingLogicService'];
 function AlreadyBoughtListController(ShoppingLogicService){
   var list2 = this;
   list2.items = ShoppingLogicService.getItemsBought();
-  list2.listSize = list2.items.length;
+
 }
 
 function ShoppingLogicService(){
